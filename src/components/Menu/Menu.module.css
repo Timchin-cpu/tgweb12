@@ -1,0 +1,66 @@
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* расстояние между кнопками */
+  margin-right: 10%;
+}
+
+.navbar {
+  background-color: #990000;
+  display: flex;
+  align-items: center;
+  padding: 1vh;
+  justify-content: space-between;
+  position: relative;
+  min-height: 3.5vw;
+}
+
+.menuContainer {
+  display: inline-block;
+}
+header {
+  font-size: 1.4vw;
+}
+.logoButton,
+.tryNowButton,
+.menuButton {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4vw;
+}
+
+/* .menuContainer {
+  position: relative;
+} */
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #990000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* min-width: 200px; */
+  box-shadow: 0 2px 5px #333;
+  z-index: 1000;
+  /* text-align: center; */
+}
+
+.dropdownMenu li {
+  padding: 0;
+}
+
+.dropdownMenu a {
+  color: white;
+  text-decoration: none;
+  padding: 1vw;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdownMenu a:hover {
+  background-color: #333;
+}

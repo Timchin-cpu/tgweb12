@@ -1,0 +1,290 @@
+.container {
+  display: flex;
+  justify-content: space-between; /* распределяет элементы по краям */
+  align-items: center;
+  padding: 20px;
+}
+.aboutSection {
+  display: flex;
+}
+.textImageWrapper {
+  /* display: flex; */
+  border-radius: 5px;
+  padding: 50px;
+  gap: 20px;
+  align-items: center;
+}
+.advantagesSection {
+  display: flex;
+  margin-left: 1.3%;
+  align-items: center;
+  width: max-content;
+  margin-top: -64px;
+}
+.aboutText ul {
+  width: 95%;
+}
+.advantagesSection p {
+  font-size: 30px;
+  color: blue;
+  /* width: 70%; */
+  margin-left: 25px;
+  margin-top: 45px;
+}
+.title {
+  margin-top: 0px;
+  margin-bottom: 30%;
+  color: #cc0000;
+  width: 15%;
+}
+
+.image {
+  width: 30%;
+  height: 30%;
+  margin-right: 16%;
+}
+.buttonImage {
+  width: 100%;
+  height: auto;
+}
+.imageContainer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+}
+
+.overlayButton {
+  position: absolute;
+  left: 17.8%;
+  top: 79%;
+  transform: translate(-50%, -50%);
+  width: 2.5vw;
+  height: auto;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.aboutText {
+  bottom: 10px;
+  width: 70%;
+  font-size: 25px;
+}
+.arrow1Button div {
+  position: relative;
+  top: 10px;
+  width: 45px; /* Уменьшили с 90px */
+  height: 5px;
+  background-color: #cc0000;
+  box-shadow: 0 1.5px 2.5px rgba(0, 0, 0, 0.2);
+  left: 0;
+  display: block;
+}
+.arrow1Button {
+  cursor: pointer;
+  width: 40px;
+  height: 25px;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  transition: transform 0.3s ease;
+  margin-left: 44%;
+}
+.arrow1Button:hover {
+  transform: scale(1.15); /* Увеличиваем эффект при наведении */
+}
+
+.arrow1Button:active {
+  transform: scale(1); /* Убираем эффект увеличения при клике */
+}
+.arrow1Button div::after {
+  content: "";
+  position: absolute;
+  width: 20px; /* Уменьшили с 40px */
+  height: 5px;
+  top: -5.5px;
+  right: -4px;
+  background-color: #cc0000;
+  transform: rotate(45deg);
+}
+
+.arrow1Button div::before {
+  content: "";
+  position: absolute;
+  width: 20px; /* Уменьшили с 40px */
+  height: 5px;
+  top: 5.5px;
+  right: -4px;
+  background-color: #cc0000;
+  box-shadow: 0 1.5px 2.5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-45deg);
+}
+.section {
+  height: 600px;
+}
+
+.arrow1:hover {
+  transform: scale(1.15); /* Увеличиваем эффект при наведении */
+}
+
+.arrow1:active {
+  transform: scale(1); /* Убираем эффект увеличения при клике */
+}
+
+.arrow1 {
+  cursor: pointer;
+  width: 40px;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  transition: transform 0.3s ease;
+  /* margin-top: 18%; */
+  /* margin-left: 7%; */
+}
+
+.arrow1 div {
+  position: relative;
+  top: 10px;
+  width: 45px; /* Уменьшено с 90px */
+  height: 5px;
+  background-color: #cc0000;
+  box-shadow: 0 1.5px 2.5px rgba(0, 0, 0, 0.2);
+  left: 0;
+  display: block;
+}
+
+.arrow1 div::after {
+  content: "";
+  position: absolute;
+  width: 20px; /* Уменьшено с 40px */
+  height: 5px;
+  top: -5.5px;
+  right: -4px;
+  background-color: #cc0000;
+  transform: rotate(45deg);
+}
+
+.arrow1 div::before {
+  content: "";
+  position: absolute;
+  width: 20px; /* Уменьшено с 40px */
+  height: 5px;
+  top: 5.5px;
+  right: -4px;
+  background-color: #cc0000;
+  box-shadow: 0 1.5px 2.5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-45deg);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.overlayButtonModal {
+  position: absolute;
+  left: 46.8%;
+  top: 77%;
+  transform: translate(-50%, -50%);
+  width: 3.5vw;
+  height: auto;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.modalContent {
+  background-color: white;
+  padding: 3.2vw;
+  border-radius: 8px;
+  border: 2px solid #cc0000;
+  /* min-width: 300px; */
+  max-width: 27vw;
+  position: relative;
+  text-align: center;
+  max-height: 35vw;
+}
+
+.modalContent p {
+  font-size: 1.3vw;
+}
+.aboutTextMore {
+  font-size: 25px;
+  text-align: left;
+}
+@media (max-width: 408px) and (min-width: 359px) {
+  .overlayButton {
+    top: 77%;
+  }
+}
+@media (max-width: 358px) and (min-width: 305px) {
+  .overlayButton {
+    top: 76%;
+  }
+}
+@media (max-width: 304px) and (min-width: 273px) {
+  .overlayButton {
+    top: 75%;
+  }
+}
+@media (max-width: 272px) and (min-width: 239px) {
+  .overlayButton {
+    top: 74%;
+  }
+}
+@media (max-width: 238px) and (min-width: 209px) {
+  .overlayButton {
+    top: 73%;
+  }
+}
+@media (max-width: 508px) and (min-width: 409px) {
+  .overlayButton {
+    top: 78%;
+  }
+
+  .title {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .image {
+    width: 90%;
+    height: 50%;
+    top: 10%;
+    left: 5%;
+  }
+
+  .aboutText {
+    position: static;
+    width: 90%;
+    margin: 60% auto 10px;
+    text-align: center;
+  }
+
+  .section {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+@media (min-width: 1500px) {
+  .image {
+    width: 22%;
+  }
+  .aboutText {
+    font-size: 25px;
+  }
+}
