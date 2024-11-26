@@ -148,7 +148,7 @@
 }
 @media (max-width: 358px) and (min-width: 305px) {
   .overlayButton {
-    top: 70%;
+    top: 70.5%;
   }
 }
 @media (max-width: 304px) and (min-width: 273px) {
@@ -168,7 +168,7 @@
 }
 @media (max-width: 508px) and (min-width: 409px) {
   .overlayButton {
-    top: 74%;
+    top: 73%;
   }
 
   .textImageWrapper {
